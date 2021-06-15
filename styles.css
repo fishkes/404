@@ -1,0 +1,182 @@
+:root {
+  --gray1: #333333;
+  --gray2: #4f4f4f;
+  --gray3: #bdbdbd;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: "Space Mono", monospace, sans-serif;
+  overflow: auto;
+  color: var(--gray1);
+}
+
+.container {
+  height: calc(100% - 50px);
+}
+
+.text-gray-1 {
+  color: var(--gray1);
+}
+
+.text-gray-2 {
+  color: var(--gray2);
+}
+.font-inconsolta {
+  font-family: "Inconsolata", monospace;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.mt-lg {
+  margin-top: 20px;
+}
+.mt-xl {
+  margin-top: 24px;
+}
+
+.mx-lg {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.mx-xl {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.my-lg {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.my-xl {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.px-lg {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.px-xl {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.py-lg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.py-xl {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-xs {
+  font-size: 11px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+.text-md {
+  font-size: 18px;
+}
+.text-lg {
+  font-size: 24px;
+}
+.text-xl {
+  font-size: 48px;
+}
+
+.scarecrow-img {
+  display: block;
+  margin: 64px auto;
+}
+
+.bg-gray-1 {
+  background: var(--gray1);
+}
+
+.text-white {
+  color: #fff;
+}
+
+h1 {
+  line-height: 70px;
+  letter-spacing: -3px;
+}
+
+.btn {
+  margin-top: 66px;
+  width: 216px;
+  height: 68px;
+  border: none;
+}
+
+footer {
+  color: var(--gray3);
+  justify-self: flex-end;
+}
+
+footer span {
+  font-weight: bold;
+}
+footer a {
+  text-decoration: none;
+  color: var(--gray3);
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: flex;
+    align-items: center;
+    margin: 64px auto;
+    max-width: 768px;
+    flex-wrap: no-wrap;
+  }
+
+  .scarecrow-img {
+    margin: 0;
+    margin-right: 50px;
+  }
+}
